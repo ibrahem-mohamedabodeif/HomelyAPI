@@ -1,2 +1,3 @@
-const handler = require('../../dist/vercel-serverless').default;
-module.exports = handler;
+const { default: server } = require("../dist/main");
+
+module.exports = server;

@@ -1,12 +1,13 @@
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "devCommand": "npm run start:dev",
-  "framework": null,
+  "version": 2,
   "functions": {
-    "src/vercel-serverless.ts": {
+    "api/index.js": {
+      "runtime": "nodejs22.x",
       "memory": 1024,
       "maxDuration": 60
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.js" }
+  ]
 }
