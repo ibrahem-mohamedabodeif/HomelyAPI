@@ -4,7 +4,7 @@
   "devCommand": "npm run start:dev",
   "framework": null,
   "functions": {
-    "src/main.ts": {
+    "src/vercel-serverless.ts": {
       "memory": 1024,
       "maxDuration": 60
     }
